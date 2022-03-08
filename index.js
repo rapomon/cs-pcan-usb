@@ -323,21 +323,21 @@ module.exports = class PcanUsb extends Duplex {
 
       for (let i in me.options.filters) {
         const filter = me.options.filters[i];
-        if (filter.code && filter.mask) {
+        if (filter.code !== undefined && filter.mask !== undefined) {
           if (filter.ext) {
             pcan.AcceptanceFilter29Bit(me.port, filter.code, filter.mask);
           } else {
             pcan.AcceptanceFilter11Bit(me.port, filter.code, filter.mask);
           }
-        } else if (filter.fromID && filter.toID) {
-          pcan.FilterMessages(me.port, filter.fromID, filter.toID, 0x02);
-        } else if (filter.id) {
+        } else if (filter.fromID !== undefined && filter.toID !== undefined) {
+          pcan.FilterMessages(me.port, filter.fromID, filter.toID, filter.ext ? 0x02 : 0x00);
+        } else if (filter.id !== undefined) {
 
           // Split start/stop range and convert them to acceptance code + mask
           const parts = filter.id.split(' ');
           let fromID = parseInt(parts[0], 16);
           let toID = parseInt(parts[1], 16);
-          pcan.FilterMessages(me.port, fromID, toID, 0x02);
+          pcan.FilterMessages(me.port, fromID, toID, filter.ext ? 0x02 : 0x00);
         } else {
           let err = new Error("Unknown or unspecified filter format.");
           me.emit('error', err);
