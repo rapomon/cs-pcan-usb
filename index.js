@@ -7,7 +7,7 @@
 const pcan = require('./binding/Release/node-v93-win32-x64/cs_pcan_usb.node');
 
 const { Duplex } = require('stream');
-const tpcan = require('@csllc/cs-pcan-usb/lib/tpcan');
+const tpcan = require('./lib/tpcan');
 
 // Default configuration used unless overridden by caller
 const DEFAULT_OPTIONS = {
