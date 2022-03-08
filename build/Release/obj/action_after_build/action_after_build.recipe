@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\nodejs\pc-app-react\node_modules\@csllc\cs-pcan-usb\build\Release\cs_pcan_usb.node</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\nodejs\pc-app-react\node_modules\@csllc\cs-pcan-usb\build\Release\action_after_build</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

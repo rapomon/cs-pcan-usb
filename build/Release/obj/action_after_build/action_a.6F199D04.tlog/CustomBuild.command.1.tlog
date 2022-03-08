@@ -1,0 +1,9 @@
+^C:\NODEJS\PC-APP-REACT\NODE_MODULES\@CSLLC\CS-PCAN-USB\BUILD\RELEASE\CS_PCAN_USB.NODE
+call mkdir "C:\nodejs\pc-app-react\node_modules\@csllc\cs-pcan-usb\binding\Release\node-v93-win32-x64" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\nodejs\pc-app-react\node_modules\@csllc\cs-pcan-usb\build\Release\cs_pcan_usb.node" "C:\nodejs\pc-app-react\node_modules\@csllc\cs-pcan-usb\binding\Release\node-v93-win32-x64\cs_pcan_usb.node"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\NODEJS\PC-APP-REACT\NODE_MODULES\@CSLLC\CS-PCAN-USB\EXT\PCAN_BASIC-WIN32-X64\BIN\64\PCANBASIC.DLL
+call mkdir "C:\nodejs\pc-app-react\node_modules\@csllc\cs-pcan-usb\binding\Release\node-v93-win32-x64" 2>nul & set ERRORLEVEL=0 & copy /Y "..\ext\pcan_basic-win32-x64\bin\64\PCANBasic.dll" "C:\nodejs\pc-app-react\node_modules\@csllc\cs-pcan-usb\binding\Release\node-v93-win32-x64\PCANBasic.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\NODEJS\PC-APP-REACT\NODE_MODULES\@CSLLC\CS-PCAN-USB\EXT\PCAN_BASIC-WIN32-X64\BIN\README.TXT
+call mkdir "C:\nodejs\pc-app-react\node_modules\@csllc\cs-pcan-usb\binding\Release\node-v93-win32-x64" 2>nul & set ERRORLEVEL=0 & copy /Y "..\ext\pcan_basic-win32-x64\bin\ReadMe.txt" "C:\nodejs\pc-app-react\node_modules\@csllc\cs-pcan-usb\binding\Release\node-v93-win32-x64\ReadMe.txt"
+if %errorlevel% neq 0 exit /b %errorlevel%
