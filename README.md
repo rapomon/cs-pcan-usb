@@ -12,7 +12,7 @@ The following assumes that [NodeJS](https://nodejs.org) is already installed. Th
 
 To install this module, run:
 ```
-npm install @csllc/cs-pcan-usb
+npm install rapomon/cs-pcan-usb
 ```
 
 The following is a sample script that opens the CAN port, writes a single message to the bus, and listens for and prints received messages from the bus.
@@ -233,7 +233,7 @@ Do not run any tests on a bus with active traffic, since receiving unexpected CA
     - `npm install -g windows-build-tools`
  1. Exit the administrative console after this completes and use a console with normal privileges for the rest of the setup
  1. Clone the `cs-pcan-usb` repository:
-    `git clone https://github.com/csllc/cs-pcan-usb`
+    `git clone https://github.com/rapomon/cs-pcan-usb`
  1. Install dependencies:
     - `cd cs-pcan-usb\`
     - `npm install`
@@ -251,7 +251,7 @@ Do not run any tests on a bus with active traffic, since receiving unexpected CA
  1. Install NodeJS. Version 12.18.4 is known to work as of the time of writing. Ensure that `node` and `npm` are found when invoked through a Terminal session. If not, add the appropriate paths to the user's `PATH` environment variable.
  1. Install Xcode and the Command Line Tools using the App Store. Version 12.0.1 is known to work as of the time of writing.
  1. Clone the `cs-pcan-usb` repository:
-    `git clone https://github.com/csllc/cs-pcan-usb`
+    `git clone https://github.com/rapomon/cs-pcan-usb`
  1. Install dependencies:
     - `cd cs-pcan-usb\`
     - `npm install`
